@@ -8,7 +8,7 @@ function Home() {
       <div className="home__container">
         <img
           className="home__image"
-          src="https://cdn11.bigcommerce.com/s-9lvur5vls0/images/stencil/1280x1280/products/212/1418/khalil_mamoon__52998.1588121348.png?c=2"
+          src="https://wallpapercave.com/wp/wp5837122.jpg"
           alt=""
         />
         <div className="home__row">

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.css";
-import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
@@ -15,8 +14,6 @@ function Header() {
     }
   }
 
-
-
   return (
     <div className="header">
       <Link to="/">
@@ -26,18 +23,18 @@ function Header() {
         />
       </Link>
 
-      <div className="warning__header">
-        <img
-          className="header__warning"
-          src="https://cdn8.bigcommerce.com/s-gtto15hxsc/product_images/uploaded_images/website-banner-warning.jpg"
-          alt=""
-        />
-        </div>
-
-      <div className="header__search">
-        <input className="header__searchInput" type="text" />
-        <SearchIcon className="header__searchIcon" />
+      <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Categories 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <Link to ='/orders'>Hookah</Link>
+      <Link to ='/orders'>Pipes&Bongs</Link>
+      <Link to ='/orders'>Accessories</Link>
       </div>
+    </div>
+  
 
 
       <div className="header__nav">
@@ -64,6 +61,7 @@ function Header() {
           </div>
         </Link>
       </div>
+    </div>
     </div>
   );
 }
